@@ -4,9 +4,33 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>testing</title>
+<title>Questionaire</title>
 </head>
 <body>
-<h1>test</h1>>
+	<form name="questionaire" action="questionaire" method="post/{value}">
+
+		<table align="center">
+		<tr>
+		<td colspan="2">
+		<c:out value="${error}"/>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<select id="type" name="type" >
+	     <option value="none">---Select---</option>
+		<option value="textarea">TextArea</option>
+		<option value="radio">Radio</option>
+		<option value="checkbox">CheckBox</option>
+		</select>
+		</td>
+		</tr>
+			<tr>
+				<td align="center" colspan="2">
+					<button type="Submit">Get Questionaire</button>
+				</td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>
